@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Security Analysis of an Identity-Based Key Agreement Protocol",
+    "section": "",
+    "text": "Introduction\nBackground\n\nSymbol Explanation\n\nConclusion\n\nSecurity Threats\n\nImages\nEmbedded Video"
+  },
+  {
+    "objectID": "index.html#symbol-explanation",
+    "href": "index.html#symbol-explanation",
+    "title": "Security Analysis of an Identity-Based Key Agreement Protocol",
+    "section": "2.1. Symbol Explanation",
+    "text": "2.1. Symbol Explanation\n\nTable: Explanation of Common Cryptographic Symbols\n\n\n\n\n\n\n\nSymbol\nExplanation\n\n\n\n\n||\nRepresents string concatenation, meaning that two or more strings are concatenated from left to right.\n\n\n\\(\\oplus\\)\nRepresents the bitwise XOR (exclusive OR) operation. It operates on two binary numbers (or bits): if the corresponding bits are the same, the result is 0; if they are different, the result is 1.\n\n\n\n\n\nDiscrete Logarithm Problem (DLP)\nGiven a finite cyclic group $G = g $ and an element \\(a \\in G\\), the discrete logarithm problem is to find an integer \\(x\\) (where \\(0 \\leq x \\leq |G|\\)) such that \\[ g^x = a \\] .\n\n\n\n\n\nsequenceDiagram\n    participant User/SCR\n    participant Server\n\n    User/SCR -&gt;&gt; Server: Request Registration\n    Server --&gt;&gt; User/SCR: Initialize Smart Card (SC)\n    User/SCR -&gt;&gt; Server: Complete Smart Card (SC)\n\n\n\n\n\n\n\n\nECC The Elliptic Curve Cryptosystem (ECC) is a type of public-key cryptography based on the mathematics of elliptic curves. It leverages the difficulty of solving the discrete logarithm problem on elliptic curves to achieve functions such as data encryption, decryption, and digital signatures. The primary advantage of ECC is that it provides comparable or even higher levels of security with smaller key sizes compared to other methods (such as the RSA encryption algorithm). This means that for the same level of security, ECC requires fewer computational resources and less storage space.\n\nHash Function Hash function can convert inputs of arbitrary lengths into fixed-length outputs, achieving a many-to-one mapping. For a given hash function, \\(Hash\\), and any fingerprint, \\(c\\), it is nearly impossible to find an input, \\(m\\), such that \\(Hash(m) = c\\). This means that while it is easy to convert an input value into its corresponding output, it is extremely difficult to do the reverse."
+  },
+  {
+    "objectID": "index.html#security-threats",
+    "href": "index.html#security-threats",
+    "title": "Security Analysis of an Identity-Based Key Agreement Protocol",
+    "section": "3.1 Security Threats",
+    "text": "3.1 Security Threats\n\nCannot resist offline password guessing attacks\nIgnored the difference between session non-visible identifiers and system visible identifiers\nSalt values directly stored on the user’s smart card"
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Security Analysis of an Identity-Based Key Agreement Protocol",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nput forward by several scientists including Wen-Shenq Juang, Chin-Chen Chang and Jung-San Lee↩︎"
+  },
+  {
+    "objectID": "slides/slides.html#image1",
+    "href": "slides/slides.html#image1",
+    "title": "DSAN 5000",
+    "section": "Image1",
+    "text": "Image1"
+  },
+  {
+    "objectID": "slides/slides.html#image2",
+    "href": "slides/slides.html#image2",
+    "title": "DSAN 5000",
+    "section": "Image2",
+    "text": "Image2"
+  },
+  {
+    "objectID": "slides/slides.html#background",
+    "href": "slides/slides.html#background",
+    "title": "DSAN 5000",
+    "section": "Background",
+    "text": "Background\nIn 1981, Lamport(Lamport 1981) proposed a password-based authentication scheme, where the server stores passwords. This scheme is vulnerable to passive attacks, as once the password table is leaked or compromised, the intruder can modify the passwords stored in the system. Later, Hwang et al. (Hwang, Chen, and Laih 1990) proposed an improved protocol that overcame the weaknesses of Lamport’s scheme. Subsequently, Yang and Shieh (Yang and Shieh 1999) introduced two password authentication schemes using smart cards based on timestamps and nonces."
+  },
+  {
+    "objectID": "slides/slides.html#code",
+    "href": "slides/slides.html#code",
+    "title": "DSAN 5000",
+    "section": "Code",
+    "text": "Code\n\n\nClick to expand\n\n  #| code-fold: show\n  #| code-summary: \"Show the code\"\n  import matplotlib.pyplot as plt\n  import numpy as np\n\n  # Generate some data\n  x = np.linspace(0, 10, 100)\n  y = np.cos(x)\n\n  # Create a plot\n  plt.figure(figsize=(10, 6))\n  plt.plot(x, y, label='Cosine Wave')\n  plt.title('Any Plot')\n  plt.xlabel('X')\n  plt.ylabel('Y')\n  plt.legend()\n  plt.grid(True)\n\n  plt.show(）\n\nPlot"
+  },
+  {
+    "objectID": "slides/slides.html#citations",
+    "href": "slides/slides.html#citations",
+    "title": "DSAN 5000",
+    "section": "Citations",
+    "text": "Citations\n\n\n\n\n\n\n\n\nHwang, Tzonelih, Yihwa Chen, and Chi Jung Laih. 1990. “Non-Interactive Password Authentications Without Password Tables.” In IEEE TENCON’90: 1990 IEEE Region 10 Conference on Computer and Communication Systems. Conference Proceedings, 429–431 vol.1.\n\n\nLamport, Leslie. 1981. “Password Authentication with Insecure Communication.” Communications of The ACM 24: 770–72.\n\n\nYang, Wen-Her, and Shiuh-Pyng Shieh. 1999. “Password Authentication Schemes with Smart Cards.” Computers & Security 18 (8): 727–33."
+  }
+]
